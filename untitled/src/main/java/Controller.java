@@ -30,5 +30,25 @@ public class Controller extends HttpServlet {
         } else {
             out.print("ACTION parameter is missing or null");
         }
+        /*
+        response.setContentType("text/plain;charset=UTF-8");
+        PrintWriter out = response.getWriter();
+        String action = request.getParameter("ACTION");
+        String[] arrayAction = action.split("\\.");
+
+        switch (arrayAction[0]) {
+            case "USUARIO":
+                UsuarioAction usuarioAction = new UsuarioAction();
+                String respUser = usuarioAction.execute(request, response);
+                out.print(respUser);
+                break;
+            case "PELICULA":
+                String resp = new PeliculaAction().execute(request, response);
+                System.out.println(resp);
+                out.print(resp);
+
+                break;
+
+        * */
     }
 }
