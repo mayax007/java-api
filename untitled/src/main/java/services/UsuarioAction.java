@@ -1,8 +1,8 @@
-package action;
+package services;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import model.Usuario;
+import model.entities.Usuario;
 import model.UsuarioDAO;
 
 public class UsuarioAction implements IAction{

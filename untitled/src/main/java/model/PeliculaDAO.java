@@ -1,5 +1,8 @@
 package model;
 
+import model.entities.Pelicula;
+import model.motorsql.MotorSQL;
+
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;

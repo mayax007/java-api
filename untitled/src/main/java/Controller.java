@@ -1,3 +1,6 @@
+import services.PeliculaAction;
+import services.UsuarioAction;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -18,7 +21,9 @@ public class Controller extends HttpServlet {
             HttpServletResponse response)
             throws ServletException, IOException {
 
-        response.setContentType("text/plain;charset=UTF-8");
+        //http://localhost:8080/untitled/Controller?ACTION=PELICULA.FIND_ALL
+
+      /*  response.setContentType("text/plain;charset=UTF-8");
         response.setHeader("Access-Control-Allow-Origin", "*");
         PrintWriter out = response.getWriter();
         String action = request.getParameter("ACTION");
@@ -29,8 +34,8 @@ public class Controller extends HttpServlet {
             out.print("ACTION");
         } else {
             out.print("ACTION parameter is missing or null");
-        }
-        /*
+        }*/
+
         response.setContentType("text/plain;charset=UTF-8");
         PrintWriter out = response.getWriter();
         String action = request.getParameter("ACTION");
@@ -49,6 +54,6 @@ public class Controller extends HttpServlet {
 
                 break;
 
-        * */
     }
+}
 }

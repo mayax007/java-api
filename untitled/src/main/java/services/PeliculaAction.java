@@ -1,9 +1,9 @@
-package action;
+package services;
 
 import java.util.ArrayList;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import model.Pelicula;
+import model.entities.Pelicula;
 import model.PeliculaDAO;
 
 public class PeliculaAction implements IAction {
